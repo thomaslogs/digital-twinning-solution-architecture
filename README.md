@@ -5,6 +5,10 @@ An interactive 3D digital twin interface for exploring operational health across
 [Live demo](https://digital-twin-demo-blue.vercel.app/)  
 [Architecture concept PDF](https://digital-twin-demo-blue.vercel.app/architecture-concept-and-roadmap-for-a-digital-twinning-solution.pdf)
 
+## Preview
+
+![Digital twin preview](docs/preview.png)
+
 ## Overview
 
 This project presents a digital twinning experience designed around clarity, operational visibility, and system-level navigation. Rather than treating the architecture document and the interface as separate artifacts, the repo brings them together as one coherent product story.
