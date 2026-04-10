@@ -1,0 +1,105 @@
+:root {
+  --bg-main: #0b0f12;
+  --bg-surface: #12181d;
+  --bg-elevated: #1a232a;
+  --border-soft: #2a353e;
+  --text-primary: #e8edf1;
+  --text-secondary: #a5b1bb;
+  --petrol: #009999;
+  --orange: #ec6602;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-main);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: Inter, Geist, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#__next,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.scene-label {
+  background: rgba(12, 18, 22, 0.9);
+  border: 1px solid var(--border-soft);
+  border-left: 2px solid var(--petrol);
+  border-radius: 6px;
+  color: var(--text-primary);
+  padding: 4px 6px;
+  min-width: 84px;
+  max-width: 130px;
+  pointer-events: none;
+  font-size: 9px;
+  line-height: 1.3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.scene-label.warning,
+.scene-label.critical,
+.scene-label.offline {
+  border-left-color: var(--orange);
+}
+
+.scene-label.warning {
+  border-left-style: dashed;
+}
+
+.scene-label.critical {
+  border-left-width: 3px;
+}
+
+.scene-label.offline {
+  border-style: dotted;
+  opacity: 0.94;
+}
+
+.scene-label .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.scene-label .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scene-label .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
